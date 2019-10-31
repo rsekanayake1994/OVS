@@ -19,7 +19,7 @@ public class DatabaseController {
 		String dbUrl = "jdbc:mysql://localhost:3306/commonadminmodule";
 		String dbUser= "root";
 		String dbPass= "root";
-		//String dbPass= "evidu123";
+		
 		 		
 		try{
 			Class.forName ("com.mysql.jdbc.Driver").newInstance ();
@@ -29,7 +29,7 @@ public class DatabaseController {
 			
 			//System.out.println("error : "+e.toString());
 		}
-		System.out.println("*** CONNECTION ADMIN MODULE ****"+con);
+		System.out.println("*** CONNECTION  ****"+con);
 		return con;
 	}
 	
@@ -39,9 +39,7 @@ public class DatabaseController {
 	      Connection con = null;
 	      try{
 		       Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");  
-		      // con = DriverManager.getConnection("jdbc:sqlserver://192.168.1.23:1362;username=sa@moneprod;password=m1-password;databaseName=mCard");//UAT
-		      // con = DriverManager.getConnection("jdbc:sqlserver://192.168.1.21:1362;username=sa@moneprod;password=m!-P@55W0RD;databaseName=mCard");//production
-		       
+		     
 		       return con;
 	      }
 	      catch (Exception e) {

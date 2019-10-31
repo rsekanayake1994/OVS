@@ -23,9 +23,8 @@ public class DateDAO {
 			DatabaseController d = DatabaseController.getInstance();
 			connection = (Connection) d.getConnection();
 						
-			//String query = "SELECT * FROM tnp_dataentry_users Where TNP_DATAENTRY_USER_CREATED_BY=108";
+			
 			String param="INACTIVE";
-			//String query = "SELECT * FROM election,voter where voter.election_id=election.election_id AND voter.status='YES' AND voter.voter_id='"+voter_id+"' AND  election.status LIKE'"+param+"' ";
 			String query1="SELECT * FROM commonadminmodule.election Where status='"+param+"'"; 
 			ResultSet rs = null;
 			statement = (Statement) connection.createStatement();

@@ -82,7 +82,7 @@ public class CheckDate extends TimerTask {
 			
 		}
 		else if(now.isEqual(enddate)||now.isAfter(enddate)){
-			System.out.println("Time to Diactivate status");
+			//System.out.println("Time to Diactivate status");
 			try {
 				boolean test1=dateDAO1.updateDate1(endDateIndex[i]);
 				if(test1==true){
