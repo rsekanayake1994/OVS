@@ -29,7 +29,7 @@ public class DateDAO {
 			ResultSet rs = null;
 			statement = (Statement) connection.createStatement();
 			rs = statement.executeQuery(query1);
-			System.out.println("SQL " + query1);
+			//System.out.println("SQL " + query1);
 			while (rs.next()) {
 				dateVO = new Model();
 

@@ -73,7 +73,7 @@ public class CheckDate extends TimerTask {
 					System.out.println("Status updated");
 				}
 				else{
-					System.out.println("not updated");
+					System.out.println("");
 				}
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
@@ -89,14 +89,14 @@ public class CheckDate extends TimerTask {
 					System.out.println("Status updated");
 				}
 				else{
-					System.out.println("not updated");
+					System.out.println("");
 				}
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}else{
-			System.out.println("nothing to happen");
+			System.out.println("");
 		}
 		
 	}
